@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewPageMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/hint_color"
+        app:layout_constraintBottom_toBottomOf="@id/textViewPageMain"/>
+
+    <ImageView
+        android:id="@+id/imageViewGoExit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/round_exit"
+        android:contentDescription="@string/app_name"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="@id/textViewPageMain"
+        app:layout_constraintTop_toTopOf="@id/textViewPageMain"
+        app:layout_constraintBottom_toBottomOf="@id/textViewPageMain"/>
+
+    <ImageView
+        android:id="@+id/imageViewGoProfile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/round_person"
+        android:contentDescription="@string/app_name"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@id/imageViewGoExit"
+        app:layout_constraintTop_toTopOf="@id/textViewPageMain"
+        app:layout_constraintBottom_toBottomOf="@id/textViewPageMain"/>
+
+
+    <ImageView
+        android:id="@+id/imageViewGoMatch"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/round_user"
+        android:contentDescription="@string/app_name"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toStartOf="@id/imageViewGoProfile"
+        app:layout_constraintTop_toTopOf="@id/textViewPageMain"
+        app:layout_constraintBottom_toBottomOf="@id/textViewPageMain"/>
+
+    <com.lorentzos.flingswipe.SwipeFlingAdapterView
+        android:id="@+id/frame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewPageMain"
+        app:rotation_degrees="15.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

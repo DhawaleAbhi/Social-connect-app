@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Dating App</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="get_otp">GET OTP</string>
+    <string name="verify">Verify</string>
+    <string name="verification">Verification</string>
+    <string name="full_name">Full name</string>
+    <string name="email_id">Email Address</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="marital_status">Marital status</string>
+    <string name="single">Single</string>
+    <string name="divorced">Divorced</string>
+    <string name="married">Married</string>
+    <string name="widowed">Widowed</string>
+    <string name="other">Other</string>
+    <string name="working">Are you currently working or in school?</string>
+    <string name="school">School</string>
+    <string name="job">Job</string>
+    <string name="honest">Do you drink or smoke please be honest?</string>
+    <string name="smoke">Smoke</string>
+    <string name="drink">Drink</string>
+    <string name="both">Both</string>
+    <string name="none">None</string>
+    <string name="interest">Are you interest ?</string>
+    <string name="gender">Gender</string>
+    <string name="save">Save</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="matches">Matches</string>
+    <string name="chat">Chat</string>
+    <string name="write_here">Write here...</string>
+
+</resources>
